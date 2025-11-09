@@ -1,0 +1,344 @@
+# ============================================
+# PvPWager - Nachrichten Konfiguration
+# ============================================
+
+messages:
+  prefix: "&6[PvP]&r"
+  
+  # ===== REQUEST SYSTEM =====
+  request:
+    sent: "&aDu hast &e{player} &aeine PvP-Anfrage gesendet!"
+    
+    received: |
+      
+      &6&l━━━━━━━━━━━━━━━━━━━━━━━
+      &e&lPVP-ANFRAGE
+      &6&l━━━━━━━━━━━━━━━━━━━━━━━
+      
+      &e{player} &amöchte gegen dich kämpfen!
+      
+      &aKlicke hier zum Annehmen:
+      
+    received-clickable: "&a&l[► ANNEHMEN ◄]"
+    received-expire: "&7Die Anfrage läuft in &e60 Sekunden &7ab."
+    
+    accepted: "&aDu hast die Anfrage von &e{player} &aangenommen!"
+    denied: "&cDu hast die Anfrage von &e{player} &cabgelehnt!"
+    expired: "&cDie Anfrage von &e{player} &cist abgelaufen!"
+    cancelled: "&cDu hast die Anfrage an &e{player} &cabgebrochen!"
+    
+    no-request: "&cDu hast keine Anfrage von diesem Spieler!"
+    already-sent: "&cDu hast diesem Spieler bereits eine Anfrage gesendet!"
+    already-in-match: "&cDieser Spieler ist bereits in einem Match!"
+    self-request: "&cDu kannst dir selbst keine Anfrage senden!"
+    player-offline: "&cDieser Spieler ist nicht online!"
+  
+  # ===== WAGER SETUP =====
+  wager:
+    setup-start: |
+      
+      &6&l━━━━━━━━━━━━━━━━━━━━━━━
+      &e&lWETTEINSATZ EINRICHTEN
+      &6&l━━━━━━━━━━━━━━━━━━━━━━━
+      
+      &7Lege deine Items und/oder Geld
+      &7in die GUI ein!
+      
+      &7Drücke &a&lBESTÄTIGEN &7wenn fertig.
+      
+    
+    waiting-opponent: |
+      &e&lWarte auf {player}...
+      &7Der Gegner richtet seinen
+      &7Einsatz ein.
+    
+    both-ready: |
+      &a&lBEIDE SPIELER SIND BEREIT!
+      &7Wähle nun Arena und Equipment aus.
+    
+    item-added: "&aItem zum Einsatz hinzugefügt!"
+    item-removed: "&cItem aus dem Einsatz entfernt!"
+    money-set: "&aGeld-Einsatz gesetzt: &6${amount}"
+    money-increased: "&aGeld-Einsatz erhöht: &6${amount}"
+    money-decreased: "&cGeld-Einsatz verringert: &6${amount}"
+    
+    not-enough-money: "&cDu hast nicht genug Geld! (&6${amount} &cbenötigt)"
+    inventory-full-self: "&cDein Inventar muss mindestens &e{slots} &cfreie Plätze haben!"
+    inventory-full-opponent: "&cDein Gegner hat nicht genug Platz im Inventar!"
+    min-bet-required: "&cMindestens &e{amount} &cItems oder &6${money} &cerforderlich!"
+    
+    cancelled: "&cWetteinsatz-Setup abgebrochen!"
+  
+  # ===== ARENA & EQUIPMENT SELECTION =====
+  selection:
+    arena-select: |
+      
+      &6&l━━━━━━━━━━━━━━━━━━━━━━━
+      &e&lARENA AUSWÄHLEN
+      &6&l━━━━━━━━━━━━━━━━━━━━━━━
+      
+      &7Wähle die Arena für
+      &7euer Match aus!
+      
+    
+    arena-selected: "&aArena gewählt: &e{arena}"
+    
+    equipment-select: |
+      
+      &6&l━━━━━━━━━━━━━━━━━━━━━━━
+      &e&lEQUIPMENT AUSWÄHLEN
+      &6&l━━━━━━━━━━━━━━━━━━━━━━━
+      
+      &7Wähle dein Equipment-Set
+      &7für das Match!
+      
+    
+    equipment-selected: "&aEquipment gewählt: &e{equipment}"
+    
+    waiting-opponent-choice: |
+      &e&lWarte auf {player}...
+      &7Der Gegner wählt noch aus.
+    
+    both-selected: |
+      &a&lALLE AUSWAHLEN GETROFFEN!
+      &7Match startet gleich...
+  
+  # ===== MATCH =====
+  match:
+    starting: "&eMatch startet in &6&l{time} &eSekunden!"
+    started: |
+      
+      &a&l━━━━━━━━━━━━━━━━━━━━━━━
+      &a&lMATCH GESTARTET!
+      &a&l━━━━━━━━━━━━━━━━━━━━━━━
+      
+      &7Viel Erfolg!
+      
+    
+    spectator-join-announce: "&7{player} &eschaut nun zu."
+    spectator-leave-announce: "&7{player} &eschaut nicht mehr zu."
+    
+    spectator-joined: "&aDu schaust nun bei &e{player1} &agegen &e{player2} &azu!"
+    spectator-left: "&7Du schaust nicht mehr zu."
+    
+    boundaries-warning: "&c&lACHTUNG: &cArena-Grenze erreicht!"
+  
+  # ===== MATCH ENDE =====
+  end:
+    winner: |
+      
+      &6&l━━━━━━━━━━━━━━━━━━━━━━━
+      &6&l{player} HAT GEWONNEN!
+      &6&l━━━━━━━━━━━━━━━━━━━━━━━
+      
+    
+    surrender: "&e{player} &chat aufgegeben!"
+    
+    draw: |
+      
+      &e&l━━━━━━━━━━━━━━━━━━━━━━━
+      &e&lUNENTSCHIEDEN!
+      &e&l━━━━━━━━━━━━━━━━━━━━━━━
+      
+      &7Alle Einsätze werden zurückgegeben.
+      
+    
+    timeout: |
+      
+      &c&l━━━━━━━━━━━━━━━━━━━━━━━
+      &c&lZEIT ABGELAUFEN!
+      &c&l━━━━━━━━━━━━━━━━━━━━━━━
+      
+      &7Unentschieden - Zeit überschritten.
+      
+    
+    items-returned: "&7Deine Einsätze wurden zurückgegeben."
+    items-won: |
+      
+      &a&l━━━━━━━━━━━━━━━━━━━━━━━
+      &a&lDU HAST GEWONNEN!
+      &a&l━━━━━━━━━━━━━━━━━━━━━━━
+      
+      &7Du hast alle Einsätze erhalten!
+      
+    
+    money-won: "&aDu hast &6&l${amount} &agewonnen!"
+    items-received: "&aDu hast &e{count} &aItem(s) erhalten!"
+  
+  # ===== SURRENDER & DRAW =====
+  surrender:
+    confirm-required: |
+      &c&lAUFGEBEN?
+      &7Bist du sicher? Gib ein:
+      &e/surrender confirm
+      
+      &cDu verlierst alle Einsätze!
+    
+    cancelled: "&7Aufgabe abgebrochen."
+    
+    success: |
+      
+      &c&l━━━━━━━━━━━━━━━━━━━━━━━
+      &c&lDU HAST AUFGEGEBEN!
+      &c&l━━━━━━━━━━━━━━━━━━━━━━━
+      
+      &7Dein Gegner hat gewonnen.
+      
+  
+  draw:
+    vote-started: |
+      
+      &e&l━━━━━━━━━━━━━━━━━━━━━━━
+      &e&lUNENTSCHIEDEN-ABSTIMMUNG
+      &e&l━━━━━━━━━━━━━━━━━━━━━━━
+      
+      &e{player} &7möchte unentschieden!
+      
+      &aAkzeptieren: &e/draw accept
+      &cAblehnen: &e/draw deny
+      
+      &7Zeit: &e{time} Sekunden
+      
+    
+    vote-accept: "&a&lZugestimmt!"
+    vote-deny: "&c&lAbgelehnt!"
+    
+    accepted: "&aUnentschieden akzeptiert!"
+    denied: "&cUnentschieden abgelehnt - Kampf geht weiter!"
+    
+    timeout: "&cAbstimmung abgelaufen - Kampf geht weiter!"
+    already-voted: "&cDu hast bereits abgestimmt!"
+    no-active-vote: "&cKeine aktive Abstimmung!"
+  
+  # ===== SPECTATOR =====
+  spectator:
+    join-success: "&aDu schaust nun bei &e{player1} &avs &e{player2} &azu!"
+    leave-success: "&7Du hast den Spectator-Modus verlassen."
+    
+    no-match: "&cKein Match gefunden!"
+    match-full: "&cDieses Match hat bereits zu viele Zuschauer!"
+    already-spectating: "&cDu schaust bereits zu!"
+    permission-required: "&cDu brauchst die Berechtigung zum Zuschauen!"
+  
+  # ===== FEHLER =====
+  error:
+    no-permission: "&cKeine Berechtigung!"
+    player-not-found: "&cSpieler nicht gefunden oder offline!"
+    player-not-online: "&cDieser Spieler ist nicht online!"
+    
+    no-arena: "&cKeine Arena gefunden!"
+    no-equipment: "&cKein Equipment-Set gefunden!"
+    arena-not-available: "&cDiese Arena ist nicht verfügbar!"
+    equipment-not-available: "&cDieses Equipment-Set ist nicht verfügbar!"
+    
+    already-in-match: "&cDu bist bereits in einem Match!"
+    opponent-in-match: "&cDieser Spieler ist bereits in einem Match!"
+    not-in-match: "&cDu bist in keinem Match!"
+    
+    world-not-loaded: "&cDie Arena-Welt konnte nicht geladen werden!"
+    
+    command-blocked: "&cCommands sind im Match gesperrt! Nutze &e/surrender &coder &e/draw"
+  
+  # ===== HELP =====
+  help:
+    header: |
+      
+      &6&l━━━━━━━━━━━━━━━━━━━━━━━
+      &e&lPVP WAGER BEFEHLE
+      &6&l━━━━━━━━━━━━━━━━━━━━━━━
+      
+
+  # ===== EVENT-NACHRICHTEN =====
+  # Diese Schlüssel werden vom Event-System genutzt
+  general:
+    player-only: "&cNur Spieler können diesen Befehl nutzen!"
+    no-permission: "&cKeine Berechtigung!"
+    unknown-command: "&cUnbekannter Befehl. Nutze &e/event help"
+    event-not-found: "&cEvent nicht gefunden: &e{event}"
+
+  join:
+    already-joined: "&cDu bist bereits dem Event beigetreten."
+    event-running: "&cDas Event läuft bereits. Beitreten nicht möglich."
+    countdown-active: "&7Der Countdown läuft schon, du kannst noch beitreten."
+    success: "&aDu hast dich erfolgreich für das Event angemeldet!"
+    event-full: "&cDas Event ist voll!"
+
+  leave:
+    not-in-event: "&cDu bist in keinem Event."
+    success: "&7Du hast das Event verlassen."
+
+  lobby:
+    welcome: "&7Willkommen in der Event-Lobby! Bereite dich vor."
+
+  start:
+    already-running: "&cDieses Event läuft bereits."
+    join-phase-started: "&aJoin-Phase gestartet! Nutze &e/event join"
+    join-phase-ending: "&eJoin-Phase endet in &6{time} &eSekunden!"
+    join-phase-closed: "&cJoin-Phase beendet – Event startet!"
+    not-enough-players: "&cZu wenige Spieler. Mindestanzahl: &e{min}"
+    countdown: "&7Event startet in &e{time} &7Sekunden..."
+    auto-teleport: "&7Teleportiere Spieler in Lobby/Event-Welt..."
+    preparing-worlds: "&7Welten werden vorbereitet..."
+    regenerating: "&eEvent-Welt wird regeneriert – bitte warten..."
+
+  countdown:
+    preparing: "&7Vorbereiten..."
+    starting: "&eStartet..."
+    go: "&aLos!"
+
+  event:
+    started-subtitle: "&7Viel Erfolg!"
+    eliminated-spectator: "&7Du bist eliminiert und nun Zuschauer."
+
+  end:
+    eliminated: "&7{player} wurde eliminiert!"
+    winner: "&6&l{player} HAT GEWONNEN!"
+    all-eliminated: "&7Alle Spieler eliminiert."
+    no-winner: "&7Kein Gewinner ermittelt."
+    thanks: "&7Danke fürs Mitmachen!"
+
+  rewards:
+    winner-subtitle: "&aBelohnungen werden ausgezahlt"
+    item-received: "&aDu hast eine Belohnung erhalten!"
+    command-executed: "&7Belohnungs-Befehl ausgeführt."
+
+  admin:
+    event-stopped: "&cEvent gestoppt."
+    reloaded: "&aKonfiguration neu geladen."
+
+  help:
+    join: "&e/event join &7– Event beitreten"
+    leave: "&e/event leave &7– Event verlassen"
+    list: "&e/event list &7– verfügbare Events"
+    admin-header: "&eAdmin"
+    start: "&e/event start <event>"
+    stop: "&e/event stop <event>"
+    forcestart: "&e/event forcestart <event>"
+    reload: "&e/eventpvp reload"
+    footer: "&7Viel Spaß!"
+    
+    challenge: "&e/pvp <spieler> &7- Fordere jemanden heraus"
+    accept: "&e/pvp accept <spieler> &7- Akzeptiere Herausforderung"
+    deny: "&e/pvp deny <spieler> &7- Lehne Herausforderung ab"
+    spectate: "&e/pvp spectate <spieler> &7- Schaue einem Match zu"
+    
+    surrender: "&e/surrender &7- Gib auf (Bestätigung erforderlich)"
+    draw: "&e/draw &7- Stimme für Unentschieden"
+    
+    footer: |
+      &6&l━━━━━━━━━━━━━━━━━━━━━━━
+      
+  
+  # ===== GUI NACHRICHTEN =====
+  gui:
+    wager-title: "&6&lWetteinsatz einrichten"
+    arena-title: "&e&lArena auswählen"
+    equipment-title: "&e&lEquipment auswählen"
+    
+    click-to-select: "&7Klicke zum Auswählen"
+    click-to-confirm: "&a&lKlicke zum Bestätigen"
+    click-to-cancel: "&c&lKlicke zum Abbrechen"
+    
+    ready: "&a&lBEREIT"
+    waiting: "&e&lWARTEND"
+    confirmed: "&a&l✔ BESTÄTIGT"
